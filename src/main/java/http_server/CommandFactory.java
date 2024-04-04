@@ -1,6 +1,7 @@
 package http_server;
 
 import com.sun.net.httpserver.HttpExchange;
+import http_server.http_commands.HttpMethodHandler;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -28,7 +29,7 @@ public class CommandFactory {
     private String getClassName(String methodType) {
         String httpMethodType = methodType.toLowerCase();
         httpMethodType = httpMethodType.substring(0, 1).toUpperCase() + httpMethodType.substring(1);
-        String className = "http_server.http_comands." + httpMethodType + "MethodHandler";
+        String className = "http_server.http_commands." + httpMethodType + "MethodHandler";
         return className;
     }
 }

@@ -23,6 +23,5 @@ public class DeleteMethodHandler extends HttpMethodHandler{
                 executeSendResponseHeaders(ex, StatusCode._500.getCode(), response.getBytes().length);
             }
         }
-
     }
 }

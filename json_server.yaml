@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: json-server
-          image: oleksii/http_server:IMAGE_TAG_PLACEHOLDER
+          image: oleksiisyzonov/http_server:IMAGE_TAG_PLACEHOLDER
           imagePullPolicy: Always
           ports:
             - containerPort: 8082

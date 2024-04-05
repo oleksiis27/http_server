@@ -21,7 +21,7 @@ public class DeleteMethodHandler extends HttpMethodHandler{
             }
             else {
                 executeSendResponseHeaders(ex, StatusCode._500.getCode(), response.getBytes().length);
-            }//cicd check Attempt 4
+            }//cicd check Attempt 5
         }
     }
 }
